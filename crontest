@@ -1,4 +1,4 @@
-*/3 * * * *  jovyan cd /home/jovyan/work/ && echo "test"
+'35 * * * *  jovyan cd /home/jovyan/work/user_cluster && ./batch.sh'
 
 
 

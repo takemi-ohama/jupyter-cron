@@ -5,16 +5,8 @@ services:
     image: hammer/jupyter-cron:latest
     volumes:
       - jupyter_work:/home/jovyan/work
-    ports:
-      - 18888:8888
-    configs:
-      - source: configtest
-        target: /etc/crontab
 
 volumes:
   jupyter_work:
     external: true
 
-configs:
-  configtest:
-    external: true
