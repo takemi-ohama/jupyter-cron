@@ -1,4 +1,0 @@
-'35 * * * *  jovyan cd /home/jovyan/work/user_cluster && ./batch.sh'
-
-
-

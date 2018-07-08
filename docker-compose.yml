@@ -5,8 +5,14 @@ services:
     image: hammer/jupyter-cron:latest
     volumes:
       - jupyter_work:/home/jovyan/work
+      - ./crontab:/var/spool/cron/crontabs/root
+    networks:
+      - jcron_local
 
 volumes:
   jupyter_work:
     external: true
+
+networks:
+  jcron_local:
 
