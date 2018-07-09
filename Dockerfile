@@ -12,4 +12,4 @@ ENV TZ=Asia/Tokyo
 CMD ["busybox", "crond", "-f", "-L", "/dev/stderr"]
 
 RUN mkdir -p /var/spool/cron/crontabs/ && \
-    echo "* * * * * /home/jovyan/work/user_cluster/batch.sh >> /dev/stdout " > /var/spool/cron/crontabs/root
+    echo "*/3 * * * * /home/jovyan/work/user_cluster/batch.sh >> /dev/stdout " > /var/spool/cron/crontabs/root
